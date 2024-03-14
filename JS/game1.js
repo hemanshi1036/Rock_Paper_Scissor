@@ -1,27 +1,27 @@
-//let userScore = 0;
-//let computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 
 const choices = document.querySelectorAll(".choise");
-
+const start = document.querySelectorAll(".start");
 choices.forEach((choise) => {
     choise.addEventListener("click", () =>{
         const userChoice = choise.getAttribute("id");
         playGame(userChoice);
     });
 });
-
+// this is trial commit
 const drawGame = () => {
     console.log("Game Was Draw");
     start.innerText = "GAME WAS DRAW, START AGAIN!!!";
 }; 
 const showWinner = (userwin) => {
     if (userwin) {
-        
+        userScore++;
         console.log("You Win");
         start.innerText = "YOU WIN!!!";
     }
     else {
-        
+        computerScore++;
         console.log("Comp win");
         start.innerText = "COMP WIN!!!";
     }
