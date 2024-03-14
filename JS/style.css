@@ -19,8 +19,8 @@ h1{
     border-radius: 50%;
 }
 img{
-    height: 165px;
-    width: 165px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
     border-radius: 50%;
 
@@ -28,14 +28,15 @@ img{
 .choise:hover{
     opacity: 0.5;
     cursor: pointer;
-    background-color: aqua;
+    background-color: rgb(0, 8, 8);
+    
 }
 .choise{
-    height: 150px;
-    width: 150px;
+    height: 165px;
+    width: 165px;
     display: flex;
     border-radius: 50%;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -49,10 +50,12 @@ img{
 
     
 }
-#userscore, #computerscore{
-    font-size: 3rem;
 
 
+#userscore, 
+#computerscore {
+    font-size: 4rem;
+    
 }
 .start{
     margin-top: 5rem;
@@ -63,4 +66,7 @@ img{
     justify-content: center;
     display: flex;
 
+}
+#msg{
+    display: inline;
 }
