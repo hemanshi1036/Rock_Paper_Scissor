@@ -2,7 +2,10 @@ let userScore = 0;
 let computerScore = 0;
 
 const choices = document.querySelectorAll(".choise");
-const start = document.querySelectorAll("#msg");
+const msg = document.querySelector("#msg");
+const user_Score = document.querySelector("#userScore");
+const comp_Score = document.querySelector("#computerScore");
+
 
 choices.forEach((choise) => {
     choise.addEventListener("click", () => {
@@ -18,13 +21,15 @@ const drawGame = () => {
 const showWinner = (userwin) => {
     if (userwin) {
         userScore++;
+        user_Score.innerText = userScore;
         console.log("You Win");
         msg.innerText = "YOU WIN!!!";
     }
     else {
         computerScore++;
+        comp_Score.innerText = computerScore;
         console.log("Comp win");
-        start.innerText = "COMP WIN!!!";
+        msg.innerText = "COMP WIN!!!";
     }
 };
 function genComChoice() {
