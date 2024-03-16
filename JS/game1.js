@@ -2,9 +2,10 @@ let userScore = 0;
 let computerScore = 0;
 
 const choices = document.querySelectorAll(".choise");
-const start = document.querySelectorAll(".start");
+const start = document.querySelectorAll("#msg");
+
 choices.forEach((choise) => {
-    choise.addEventListener("click", () =>{
+    choise.addEventListener("click", () => {
         const userChoice = choise.getAttribute("id");
         playGame(userChoice);
     });
@@ -18,7 +19,7 @@ const showWinner = (userwin) => {
     if (userwin) {
         userScore++;
         console.log("You Win");
-        start.innerText = "YOU WIN!!!";
+        msg.innerText = "YOU WIN!!!";
     }
     else {
         computerScore++;

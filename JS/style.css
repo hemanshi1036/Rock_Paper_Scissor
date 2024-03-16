@@ -57,16 +57,31 @@ img{
     font-size: 4rem;
     
 }
-.start{
+/* .start{
     margin-top: 5rem;
     background-color: black;
     color: aliceblue;
     font-size: 2rem;
     padding: 2rem;
-    justify-content: center;
     display: flex;
+    /* display:inline-grid; */
+    /* display: inline-flex; */
+    /* align-items: center; */
+    /* justify-items: center; */
 
-}
-#msg{
-    display: inline;
-}
+    .start {
+    margin-top: 3rem;
+    width: 15rem;
+    margin-left: 37.5%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    }
+    
+    #msg{
+        justify-content: center;
+    }
+
