@@ -17,7 +17,7 @@ choices.forEach((choise) => {
 const drawGame = () => {
     console.log("Game Was Draw");
     msg.innerText = "GAME WAS DRAW, START AGAIN!!!";
-    msg.style.backgroundColor = "aqua";
+    // msg.style.backgroundColor = "aqua";
 
 }; 
 const showWinner = (userwin) => {
@@ -26,14 +26,14 @@ const showWinner = (userwin) => {
         user_Score.innerText = userScore;
         console.log("You Win");
         msg.innerText = "YOU WIN!!!";
-        msg.style.backgroundColor = "red";
-    }
+        // msg.style.backgroundColor = "red";
+        body.style.backgroundColor = "red";
+}
     else {
         computerScore++;
-        msg.style.backgroundColor = "green";
+        // msg.style.backgroundColor = "green";
         comp_Score.innerText = computerScore;
         console.log("Comp win");
-        
         msg.innerText = "COMP WIN!!!";
         
     }
