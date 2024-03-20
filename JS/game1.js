@@ -1,10 +1,13 @@
 let userScore = 0;
 let computerScore = 0;
 
+
+// const body = document.querySelectorAll(.body);
 const choices = document.querySelectorAll(".choise");
 const msg = document.querySelector("#msg");
 const user_Score = document.querySelector("#userScore");
 const comp_Score = document.querySelector("#computerScore");
+
 
 
 choices.forEach((choise) => {
@@ -17,24 +20,38 @@ choices.forEach((choise) => {
 const drawGame = () => {
     console.log("Game Was Draw");
     msg.innerText = "GAME WAS DRAW, START AGAIN!!!";
-    // msg.style.backgroundColor = "aqua";
+    msg.style.backgroundColor = "aqua";
 
 }; 
+const no_of_moves = () => {
+
+}
+const result = () =>{
+    if(no_of_moves >= 20){
+        userScore = 0;
+        user_Score.innerText = userScore;
+        computerScore = 0;
+        comp_Score.innerText = computerScore;
+    }
+
+}
 const showWinner = (userwin) => {
     if (userwin) {
         userScore++;
         user_Score.innerText = userScore;
         console.log("You Win");
         msg.innerText = "YOU WIN!!!";
-        // msg.style.backgroundColor = "red";
-        body.style.backgroundColor = "red";
+         msg.style.backgroundColor = "red";
+         no_of_moves++;
+        // style.backgroundColor = "red";
 }
     else {
         computerScore++;
-        // msg.style.backgroundColor = "green";
+        msg.style.backgroundColor = "green";
         comp_Score.innerText = computerScore;
         console.log("Comp win");
         msg.innerText = "COMP WIN!!!";
+        no_of_moves++;
         
     }
 };
