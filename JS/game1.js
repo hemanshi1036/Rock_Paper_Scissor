@@ -23,9 +23,9 @@ const drawGame = () => {
     msg.style.backgroundColor = "aqua";
 
 }; 
-const no_of_moves = () => {
+// const no_of_moves = () => {
 
-}
+// }
 const result = () =>{
     if(no_of_moves >= 20){
         userScore = 0;
